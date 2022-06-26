@@ -10,12 +10,28 @@
 }
 body {
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
 }
+
 header {
   font-family: 'Shrikhand', cursive;
   text-align: center;
   box-shadow: 0 0 0.5rem grey;
   padding: .3rem;
+  margin: 0;
+  position: relative;
+}
+main .city{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: .3rem;
+}
+main .city i{
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
