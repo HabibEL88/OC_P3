@@ -1,53 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); /*titre*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');/*texte*/
-
-
-*, 
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*titre*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+/*texte*/
+*,
 ::before,
-::after 
-{  
+::after {
   box-sizing: border-box;
 }
+
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   text-align: center;
   box-shadow: 0 0 0.5rem grey;
-  padding: .3rem;
+  padding: 0.3rem;
   margin: 0;
   position: relative;
 }
-main .city{
+
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: .3rem;
+  padding: 0.3rem;
 }
-main .city i{
+.city i {
   font-size: 1.5rem;
 }
-/* exploration */
+
 .exploration {
   text-align: center;
 }
-
-.exploration h2{
+.exploration h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
-.exploration p{
+.exploration p {
   font-size: 1rem;
 }
-
-.exploration button{
+.exploration button {
   color: white;
   font-weight: 300;
   font-size: 1.5rem;
@@ -55,12 +53,13 @@ main .city i{
   border: none;
   border-radius: 2rem;
   box-shadow: 2px 1px 16px -3px #000000;
-  background: linear-gradient(172deg, rgba(255,121,218,1) 7%, rgba(147,86,220,1) 86%);
+  background: linear-gradient(172deg, rgb(255, 121, 218) 7%, rgb(147, 86, 220) 86%);
   transition: transform 200ms;
   margin-top: 1.5rem;
 }
-
-.exploration button:hover{
+.exploration button:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
+
+/*# sourceMappingURL=main.css.map */
