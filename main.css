@@ -17,6 +17,11 @@ main {
   padding: 0 7rem;
 }
 
+h2 {
+  padding: 2rem 0;
+  margin: 0;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -43,7 +48,6 @@ header {
   text-align: center;
 }
 .exploration h2 {
-  margin-top: 2rem;
   font-size: 2rem;
 }
 .exploration p {
@@ -69,9 +73,6 @@ header {
 .functioning {
   counter-reset: steps;
   margin-bottom: 2rem;
-}
-.functioning h2 {
-  padding-left: 1.5rem;
 }
 .functioning ol {
   display: flex;
@@ -117,19 +118,32 @@ header {
 .menus {
   background-color: #f6f6f6;
 }
-.menus h2 {
-  margin-bottom: 2rem;
-}
 .menus .menus__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-.menus .card {
-  border: 1px solid black;
-  height: 4rem;
-  flex-grow: 1;
-  min-width: 30rem;
+@media (max-width: 1200px) {
+  .menus .menus__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.menus .card .card__image {
+  height: 15rem;
+  border-radius: 3rem;
+  background-size: cover;
+}
+.menus .card__image-1 {
+  background-image: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.menus .card__image-2 {
+  background-image: url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.menus .card__image-3 {
+  background-image: url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.menus .card__image-4 {
+  background-image: url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
 /* exploration */
