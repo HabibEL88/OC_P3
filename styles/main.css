@@ -33,5 +33,18 @@ main .city{
 main .city i{
   font-size: 1.5rem;
 }
+/* exploration */
+.exploration {
+  text-align: center;
+}
+
+.exploration h2{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.exploration p{
+  font-size: 1rem;
+}
 
 /*# sourceMappingURL=main.css.map */
