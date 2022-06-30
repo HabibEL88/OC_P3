@@ -20,6 +20,15 @@ h2 {
   margin: 0;
 }
 
+h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -158,6 +167,9 @@ header {
 }
 .menus .card:nth-child(4) .card__image {
   background-image: url(img/restaurants/4.jpg);
+}
+.menus .card__description h3, .menus .card__description p {
+  margin: 0.5rem;
 }
 
 /* exploration */
