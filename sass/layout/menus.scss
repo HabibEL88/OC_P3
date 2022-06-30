@@ -3,6 +3,7 @@
 
 .menus{
     background-color: #f6f6f6;
+    margin-bottom: 2rem;
     h2{
        // margin-bottom: 2rem;
     }
@@ -51,10 +52,11 @@
         }
         &__description{
             position: relative;
-            h3,p{margin: 0.5rem;}
+            background-color: white;
+            border-radius: 0 0 1rem 1rem;
 
-            h3{                
-            padding-top: .5rem;
+            h3, p{                
+            padding-top: .3rem;
             }
         }
         i{
