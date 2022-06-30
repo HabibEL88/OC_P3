@@ -203,6 +203,10 @@ footer p {
   padding: 0.2rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* exploration */
 
 /*# sourceMappingURL=main.css.map */
