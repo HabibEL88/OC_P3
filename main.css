@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/*titre*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-/*texte*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"); /*titre*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"); /*texte*/
 *,
 ::before,
 ::after {
@@ -133,17 +131,17 @@ header {
   border-radius: 3rem;
   background-size: cover;
 }
-.menus .card__image-1 {
-  background-image: url(../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+.menus .card:nth-child(1) .card__image {
+  background-image: url(img/restaurants/1.jpg);
 }
-.menus .card__image-2 {
-  background-image: url(../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+.menus .card:nth-child(2) .card__image {
+  background-image: url(img/restaurants/2.jpg);
 }
-.menus .card__image-3 {
-  background-image: url(../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+.menus .card:nth-child(3) .card__image {
+  background-image: url(img/restaurants/3.jpg);
 }
-.menus .card__image-4 {
-  background-image: url(../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+.menus .card:nth-child(4) .card__image {
+  background-image: url(img/restaurants/4.jpg);
 }
 
 /* exploration */
