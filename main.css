@@ -242,6 +242,30 @@ footer p {
 .grid__menus .menus__group {
   border: 1px solid red;
   background-color: white;
+  border-radius: 1rem;
+}
+.grid__menus .menus__group .submenu {
+  display: flex;
+}
+.grid__menus .menus__group .submenu .submenu__description {
+  padding: 1rem;
+}
+.grid__menus .menus__group .submenu .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  margin-left: auto;
+  font-weight: 900;
+}
+.grid__menus .menus__group .submenu .price__validation {
+  background-color: #99E2D0;
+}
+.grid__menus .menus__group .submenu > * {
+  border: 1px solid blue;
+}
+.grid__menus .menus__group h4 {
+  margin: 0;
 }
 
 /* exploration */

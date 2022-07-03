@@ -34,5 +34,30 @@
     .menus__group{
         border: 1px solid red;
         background-color: white;
+        border-radius: 1rem;
+        .submenu{
+            display: flex;
+            .submenu__description{
+                padding: 1rem;
+            }
+            
+            .price{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 1rem;
+                margin-left: auto;
+                font-weight: 900;
+            }
+            .price__validation{
+                background-color: $Tertiaire;
+            }
+            & > *{
+                border: 1px solid blue;
+            }
+        }
+        h4{
+            margin: 0;
+        }
     }
 }
