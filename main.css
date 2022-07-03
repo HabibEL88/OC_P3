@@ -212,14 +212,36 @@ footer p {
 }
 
 .restaurant__main {
+  position: relative;
   margin-top: -2rem;
-  background: green;
+  background: white;
   padding: 0 1rem;
   border-radius: 2rem 2rem 0 0;
 }
 .restaurant__main h2 {
   font-family: "Shrikhand", cursive;
   padding: 2rem 1rem;
-} /* exploration */
+}
+
+.grid__menus {
+  background: yellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1200px) {
+  .grid__menus {
+    grid-template-columns: 1fr;
+  }
+}
+.grid__menus > * {
+  border: 1px solid red;
+}
+
+.page__main {
+  padding: 0 1rem;
+}
+
+/* exploration */
 
 /*# sourceMappingURL=main.css.map */
