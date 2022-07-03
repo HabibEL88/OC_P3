@@ -214,8 +214,7 @@ footer p {
 .restaurant__main {
   position: relative;
   margin-top: -2rem;
-  background: white;
-  padding: 0 1rem;
+  background: #f6f6f6;
   border-radius: 2rem 2rem 0 0;
 }
 .restaurant__main h2 {
@@ -223,7 +222,13 @@ footer p {
   padding: 2rem 1rem;
 }
 
+.page__main {
+  padding: 0 1rem;
+  background: #f6f6f6;
+}
+
 .grid__menus {
+  background: #f6f6f6;
   background: yellow;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -234,12 +239,9 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
-.grid__menus > * {
+.grid__menus .menus__group {
   border: 1px solid red;
-}
-
-.page__main {
-  padding: 0 1rem;
+  background-color: white;
 }
 
 /* exploration */

@@ -1,4 +1,5 @@
 @import "../utils/variables.scss";
+@import "../utils/colors.scss";
 
 .page__banner img{
     display: block;
@@ -10,27 +11,28 @@
 .restaurant__main {
     position: relative;
     margin-top: -2rem;
-    background: white;
-    padding: 0 1rem;
-    border-radius: 2rem 2rem 0 0;
+    background: $lightergrey;
+    border-radius: 2rem 2rem 0 0; //animation
     h2{
         font-family: "Shrikhand", cursive;
         padding: 2rem 1rem;
     }
 }
+.page__main{
+    padding: 0 1rem;
+    background: $lightergrey;
+}
 .grid__menus{
-    background: yellow;
+    background: $lightergrey;
+    background: yellow;    
     display: grid;
     grid-template-columns: repeat(3, 1fr); // =3 colonnes chacun avec avec une fraction de l'ecran
     gap: 1rem;
     @media (max-width: $breakpoint){
         grid-template-columns: 1fr;
     }
-    & > *{
+    .menus__group{
         border: 1px solid red;
+        background-color: white;
     }
-}
-
-.page__main{
-    padding: 0 1rem;
 }
