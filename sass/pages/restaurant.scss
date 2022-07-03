@@ -33,13 +33,13 @@
         grid-template-columns: 1fr;
     }
     .menus__group{
-        background-color: white;
         overflow: hidden;
-        
+        padding: 1rem;
         .submenu{   
-                     
+            
             border-radius: 1rem;
             display: flex;
+            background-color: white;
             overflow: hidden;
             @include shadow-btn;
             .submenu__description{

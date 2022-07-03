@@ -75,7 +75,7 @@ header {
   background: linear-gradient(172deg, rgb(255, 121, 218) 7%, rgb(147, 86, 220) 86%);
   transition: transform 200ms;
   margin-top: 1.5rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  box-shadow: 2px 1px 8px -3px #000000;
 }
 .exploration button:hover {
   transform: scale(1.02);
@@ -102,7 +102,7 @@ header {
   padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1.5rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  box-shadow: 2px 1px 8px -3px #000000;
 }
 .functioning li::before {
   content: counter(steps);
@@ -247,14 +247,15 @@ footer p {
   }
 }
 .grid__menus .menus__group {
-  background-color: white;
   overflow: hidden;
+  padding: 1rem;
 }
 .grid__menus .menus__group .submenu {
   border-radius: 1rem;
   display: flex;
+  background-color: white;
   overflow: hidden;
-  box-shadow: 2px 1px 16px -3px #000000;
+  box-shadow: 2px 1px 8px -3px #000000;
 }
 .grid__menus .menus__group .submenu .submenu__description {
   padding: 1rem;
