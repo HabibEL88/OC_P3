@@ -51,9 +51,12 @@
                 font-weight: 900;
             }
             .price__validation{
+                //possibilite de mettre une variable local ici $button-width: 4rem
                 background-color: $Tertiaire;
-                margin-right: -3rem;
-                width: 3rem;
+                margin-right: -4rem;
+                width: 4rem;
+                border-radius: 0 1rem 1rem 0;
+                transition: margin-right 0.65s;
             }
             &:hover .price__validation{
                 margin-right: 0;

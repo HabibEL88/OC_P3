@@ -261,8 +261,10 @@ footer p {
 }
 .grid__menus .menus__group .submenu .price__validation {
   background-color: #99E2D0;
-  margin-right: -3rem;
-  width: 3rem;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  transition: margin-right 0.65s;
 }
 .grid__menus .menus__group .submenu:hover .price__validation {
   margin-right: 0;
