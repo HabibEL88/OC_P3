@@ -1,5 +1,7 @@
 @import "../utils/variables.scss";
 @import "../utils/colors.scss";
+@import "../utils/mixins.scss";
+@import"../utils/animation.scss";
 
 .page__banner img{
     display: block;
@@ -24,7 +26,6 @@
 }
 .grid__menus{
     background: $lightergrey;
-    background: yellow;    
     display: grid;
     grid-template-columns: repeat(3, 1fr); // =3 colonnes chacun avec avec une fraction de l'ecran
     gap: 1rem;
@@ -32,12 +33,13 @@
         grid-template-columns: 1fr;
     }
     .menus__group{
-        border: 1px solid red;
         background-color: white;
-        border-radius: 1rem;
-        .submenu{            
+        .submenu{   
+                     
+            border-radius: 1rem;
             display: flex;
             overflow: hidden;
+            @include shadow-btn;
             .submenu__description{
                 padding: 1rem;
             }
@@ -52,17 +54,22 @@
             }
             .price__validation{
                 //possibilite de mettre une variable local ici $button-width: 4rem
+                display: grid;
+                place-items: center;
                 background-color: $Tertiaire;
                 margin-right: -4rem;
                 width: 4rem;
                 border-radius: 0 1rem 1rem 0;
                 transition: margin-right 0.65s;
+                i{color: white;}
             }
-            &:hover .price__validation{
+            &:hover {
+                .price__validation{
                 margin-right: 0;
-            }
-            & > *{
-                border: 1px solid blue;
+                }
+                i{
+                   animation: 0.6s spin; 
+                }
             }
         }
         h4{
