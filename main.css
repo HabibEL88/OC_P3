@@ -246,6 +246,7 @@ footer p {
 }
 .grid__menus .menus__group .submenu {
   display: flex;
+  overflow: hidden;
 }
 .grid__menus .menus__group .submenu .submenu__description {
   padding: 1rem;
@@ -260,6 +261,11 @@ footer p {
 }
 .grid__menus .menus__group .submenu .price__validation {
   background-color: #99E2D0;
+  margin-right: -3rem;
+  width: 3rem;
+}
+.grid__menus .menus__group .submenu:hover .price__validation {
+  margin-right: 0;
 }
 .grid__menus .menus__group .submenu > * {
   border: 1px solid blue;

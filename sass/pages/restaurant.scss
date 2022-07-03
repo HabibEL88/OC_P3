@@ -35,8 +35,9 @@
         border: 1px solid red;
         background-color: white;
         border-radius: 1rem;
-        .submenu{
+        .submenu{            
             display: flex;
+            overflow: hidden;
             .submenu__description{
                 padding: 1rem;
             }
@@ -51,6 +52,11 @@
             }
             .price__validation{
                 background-color: $Tertiaire;
+                margin-right: -3rem;
+                width: 3rem;
+            }
+            &:hover .price__validation{
+                margin-right: 0;
             }
             & > *{
                 border: 1px solid blue;
