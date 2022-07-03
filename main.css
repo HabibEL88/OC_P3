@@ -248,6 +248,7 @@ footer p {
 }
 .grid__menus .menus__group {
   background-color: white;
+  overflow: hidden;
 }
 .grid__menus .menus__group .submenu {
   border-radius: 1rem;
@@ -257,6 +258,7 @@ footer p {
 }
 .grid__menus .menus__group .submenu .submenu__description {
   padding: 1rem;
+  overflow: hidden;
 }
 .grid__menus .menus__group .submenu .price {
   display: flex;
@@ -269,6 +271,7 @@ footer p {
 .grid__menus .menus__group .submenu .price__validation {
   display: grid;
   place-items: center;
+  flex-shrink: 0;
   background-color: #99E2D0;
   margin-right: -4rem;
   width: 4rem;
@@ -284,8 +287,11 @@ footer p {
 .grid__menus .menus__group .submenu:hover i {
   animation: 0.6s spin;
 }
-.grid__menus .menus__group h4 {
+.grid__menus .menus__group h4, .grid__menus .menus__group p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @keyframes spin {

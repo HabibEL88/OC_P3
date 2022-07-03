@@ -34,6 +34,8 @@
     }
     .menus__group{
         background-color: white;
+        overflow: hidden;
+        
         .submenu{   
                      
             border-radius: 1rem;
@@ -42,6 +44,7 @@
             @include shadow-btn;
             .submenu__description{
                 padding: 1rem;
+                overflow: hidden;
             }
             
             .price{
@@ -56,6 +59,7 @@
                 //possibilite de mettre une variable local ici $button-width: 4rem
                 display: grid;
                 place-items: center;
+                flex-shrink: 0; //interdit de devenur plus petit
                 background-color: $Tertiaire;
                 margin-right: -4rem;
                 width: 4rem;
@@ -72,8 +76,12 @@
                 }
             }
         }
-        h4{
+        h4,p{
             margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
         }
     }
 }
