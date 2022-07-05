@@ -26,22 +26,28 @@
 }
 .grid__menus{
     background: $lightergrey;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); // =3 colonnes chacun avec avec une fraction de l'ecran
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 1rem;
-    @media (max-width: $breakpoint){
-        grid-template-columns: 1fr;
+    //grid-template-rows: repeat(3, 1fr); // =3 colonnes chacun avec avec une fraction de l'ecran
+    
+    //@media (max-width: $breakpoint){
+        //grid-template-columns: 1fr;
+    //}
+    h3{
+        text-transform:uppercase;
+        font-weight:400; 
     }
     .menus__group{
         overflow: hidden;
-        padding: 1rem;
-        .submenu{   
-            
-            border-radius: 1rem;
+        border-radius: 1rem;
+        @include shadow-btn;
+        .submenu{                         
             display: flex;
             background-color: white;
             overflow: hidden;
-            @include shadow-btn;
+            
             .submenu__description{
                 padding: 1rem;
                 overflow: hidden;
