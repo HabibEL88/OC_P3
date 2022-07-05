@@ -237,25 +237,24 @@ footer p {
 
 .grid__menus {
   background: #f6f6f6;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   gap: 1rem;
 }
-@media (max-width: 1200px) {
-  .grid__menus {
-    grid-template-columns: 1fr;
-  }
+.grid__menus h3 {
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .grid__menus .menus__group {
   overflow: hidden;
-  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px #000000;
 }
 .grid__menus .menus__group .submenu {
-  border-radius: 1rem;
   display: flex;
   background-color: white;
   overflow: hidden;
-  box-shadow: 2px 1px 8px -3px #000000;
 }
 .grid__menus .menus__group .submenu .submenu__description {
   padding: 1rem;
