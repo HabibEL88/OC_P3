@@ -245,6 +245,16 @@ footer p {
 .grid__menus h3 {
   text-transform: uppercase;
   font-weight: 400;
+  position: relative;
+}
+.grid__menus h3::after {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  height: 0.25rem;
+  width: 3rem;
+  background-color: #99E2D0;
 }
 .grid__menus .menus__group {
   overflow: hidden;

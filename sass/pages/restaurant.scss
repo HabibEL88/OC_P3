@@ -37,7 +37,17 @@
     //}
     h3{
         text-transform:uppercase;
-        font-weight:400; 
+        font-weight:400;
+        position: relative;
+        &::after{
+            content:"";          
+            position:absolute;
+            top: 1.5em;
+            left:0;
+            height:0.25rem;
+            width:3rem;
+            background-color: $Tertiaire; 
+        }
     }
     .menus__group{
         overflow: hidden;
