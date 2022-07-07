@@ -12,3 +12,24 @@
         @include shadow-btn;
     }
 }
+
+.loader{
+    position: fixed;
+    background-color: red;
+    height: 100vh;
+    inset: 0;   // top: 0;bottom: 0;right: 0;left: 0;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.9;
+    animation: disappear-loader 3s;    
+    animation-fill-mode: forwards; //pour finir l'animation qu'elle reviens pas en pos initial
+}
+
+@keyframes disappear-loader{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0);
+    }
+}
