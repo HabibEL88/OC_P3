@@ -85,14 +85,21 @@ header {
 
 .loader {
   position: fixed;
-  background-color: red;
+  color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   height: 100vh;
   inset: 0;
   z-index: 1;
   background-color: #fff;
-  opacity: 0.9;
-  animation: disappear-loader 3s;
+  opacity: 0.8;
+  animation: disappear-loader 500ms 5s;
   animation-fill-mode: forwards;
+  transform-origin: top;
+}
+.loader i {
+  animation: spin 5s infinite linear;
 }
 
 @keyframes disappear-loader {
@@ -103,6 +110,7 @@ header {
     transform: scale(0);
   }
 }
+@keyframes spin {}
 .functioning {
   counter-reset: steps;
   margin-bottom: 2rem;
