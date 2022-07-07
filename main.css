@@ -212,6 +212,16 @@ footer p {
     transform: rotate(0);
   }
 }
+@keyframes appear-menu {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
 .page__banner img {
   display: block;
   width: 100%;
@@ -261,6 +271,53 @@ footer p {
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 2px 1px 8px -3px #000000;
+  animation: appear-menu 1s;
+  animation-fill-mode: both;
+}
+.grid__menus .menus__group:nth-child(1) {
+  animation-delay: 100ms;
+}
+.grid__menus .menus__group:nth-child(2) {
+  animation-delay: 200ms;
+}
+.grid__menus .menus__group:nth-child(3) {
+  animation-delay: 300ms;
+}
+.grid__menus .menus__group:nth-child(4) {
+  animation-delay: 400ms;
+}
+.grid__menus .menus__group:nth-child(5) {
+  animation-delay: 500ms;
+}
+.grid__menus .menus__group:nth-child(6) {
+  animation-delay: 600ms;
+}
+.grid__menus .menus__group:nth-child(7) {
+  animation-delay: 700ms;
+}
+.grid__menus .menus__group:nth-child(8) {
+  animation-delay: 800ms;
+}
+.grid__menus .menus__group:nth-child(9) {
+  animation-delay: 900ms;
+}
+.grid__menus .menus__group:nth-child(10) {
+  animation-delay: 1000ms;
+}
+.grid__menus .menus__group:nth-child(11) {
+  animation-delay: 1100ms;
+}
+.grid__menus .menus__group:nth-child(12) {
+  animation-delay: 1200ms;
+}
+.grid__menus .menus__group:nth-child(13) {
+  animation-delay: 1300ms;
+}
+.grid__menus .menus__group:nth-child(14) {
+  animation-delay: 1400ms;
+}
+.grid__menus .menus__group:nth-child(15) {
+  animation-delay: 1500ms;
 }
 .grid__menus .menus__group .submenu {
   display: flex;
@@ -291,6 +348,9 @@ footer p {
 }
 .grid__menus .menus__group .submenu .price__validation i {
   color: white;
+}
+.grid__menus .menus__group .submenu:hover {
+  cursor: pointer;
 }
 .grid__menus .menus__group .submenu:hover .price__validation {
   margin-right: 0;
@@ -334,6 +394,16 @@ section.order button:hover {
   }
   to {
     transform: rotate(0);
+  }
+}
+@keyframes appear-menu {
+  0% {
+    transform: translatey(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
   }
 }
 /* exploration */

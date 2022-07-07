@@ -10,6 +10,7 @@
     object-fit:cover;
     object-position:center bottom;
 }
+
 .restaurant__main {
     position: relative;
     margin-top: -2rem;
@@ -53,10 +54,17 @@
         overflow: hidden;
         border-radius: 1rem;
         @include shadow-btn;
+        @for $i from 1 through 15 {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+            } 
+        }
+        animation: appear-menu 1s;
+        animation-fill-mode: both;
         .submenu{                         
             display: flex;
             background-color: white;
-            overflow: hidden;
+            overflow: hidden;           
             
             .submenu__description{
                 padding: 1rem;
@@ -84,6 +92,7 @@
                 i{color: white;}
             }
             &:hover {
+                cursor: pointer;
                 .price__validation{
                 margin-right: 0;
                 }
