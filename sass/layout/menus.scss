@@ -66,5 +66,15 @@
             right: 1rem;
             top: 0.5rem;
         }
+        .fa-solid{
+            color: transparent;      
+         }
+        :hover .fa-solid{
+            
+            color: transparent; 
+            @include gradient;
+            background-clip: text;
+            -webkit-background-clip:text ;
+        }
     }
 }

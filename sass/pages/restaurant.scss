@@ -10,6 +10,19 @@
     object-fit:cover;
     object-position:center bottom;
 }
+.fa-arrow-left{
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.9rem;
+}
+a:hover .fa-solid{
+    color: transparent; 
+    @include gradient;
+    background-clip: text;
+    -webkit-background-clip:text ;
+}
+
 
 .restaurant__main {
     position: relative;
@@ -20,6 +33,22 @@
         font-family: "Shrikhand", cursive;
         padding: 2rem 1rem;
     }
+    i{
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.9rem;
+    }
+    .fa-solid{
+        color: transparent;      
+         }
+    &:hover .fa-solid{
+        color: transparent; 
+        @include gradient;
+        background-clip: text;
+        -webkit-background-clip:text ;
+    }
+
 }
 .page__main{
     padding: 0 1rem;
