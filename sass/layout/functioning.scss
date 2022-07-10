@@ -19,6 +19,8 @@
     }
     li{
         position: relative ;
+        display: flex;
+        align-items: center;
         &::before{
             content: counter(steps); // remplace les chiffres ol + ajout chiffre sans toucher html atout= ajout auto des chiffres
             counter-increment: steps;
@@ -40,7 +42,12 @@
         border-radius: 1.5rem;
         @include shadow-btn;
             &:hover{
-                @include zoom 
+                @include zoom; 
+                background-color: lighten($Primaire, 35);
+                i::before{
+                    color: $Primaire;
+                }
+
             } 
                 i.fas {
                     margin: 1rem;

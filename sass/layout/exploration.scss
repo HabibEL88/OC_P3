@@ -25,11 +25,11 @@
     z-index: 1;
     background-color: #fff;
     opacity: 0.8;
-    animation: disappear-loader 500ms 5s;    
+    animation: disappear-loader 500ms 3s;    
     animation-fill-mode: forwards; //pour finir l'animation qu'elle reviens pas en pos initial
     transform-origin: top;
     i{
-        animation: spin 5s infinite linear;
+        animation: spin 3s infinite linear;
     }
 }
 
