@@ -61,10 +61,20 @@ a:hover .fa-solid{
     align-items: stretch;
     gap: 1rem;
     //grid-template-rows: repeat(3, 1fr); // =3 colonnes chacun avec avec une fraction de l'ecran
-    
+    @media (min-width: $breakpoint) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+      }
     //@media (max-width: $breakpoint){
         //grid-template-columns: 1fr;
     //}
+    .box{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
     h3{
         text-transform:uppercase;
         font-weight:400;

@@ -14,9 +14,9 @@ body {
 main {
   padding: 0 7rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   main {
-    padding: 0 1rem;
+    padding: 0;
   }
 }
 
@@ -114,14 +114,16 @@ header {
 .functioning {
   counter-reset: steps;
   margin-bottom: 2rem;
+  padding: 0 20px 0 20px;
 }
 .functioning ol {
   display: flex;
   gap: 2rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .functioning ol {
     flex-direction: column;
+    padding: 0.5rem;
   }
 }
 .functioning li {
@@ -130,7 +132,7 @@ header {
   align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
+  padding: 0.5rem 2rem;
   flex-grow: 1;
   border-radius: 1.5rem;
   box-shadow: 2px 1px 8px -3px #000000;
@@ -164,14 +166,14 @@ header {
 
 .menus {
   background-color: #f6f6f6;
-  margin-bottom: 2rem;
+  padding: 0 20px 4rem 20px;
 }
 .menus .menus__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .menus .menus__cards {
     grid-template-columns: 1fr;
   }
@@ -193,7 +195,7 @@ header {
   border-radius: 0.2rem;
 }
 .menus .card .card__image {
-  height: 15rem;
+  height: 12rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
@@ -211,9 +213,11 @@ header {
   background-image: url(img/restaurants/4.jpg);
 }
 .menus .card__description {
+  height: 4rem;
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  padding-left: 13px;
 }
 .menus .card__description h3, .menus .card__description p {
   padding-top: 0.3rem;
@@ -328,6 +332,19 @@ a:hover .fa-solid {
   flex-direction: column;
   align-items: stretch;
   gap: 1rem;
+}
+@media (min-width: 1000px) {
+  .grid__menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+.grid__menus .box {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 .grid__menus h3 {
   text-transform: uppercase;
