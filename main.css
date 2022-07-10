@@ -148,7 +148,6 @@ header {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 2rem;
   left: -1rem;
 }
 .functioning li:hover {
