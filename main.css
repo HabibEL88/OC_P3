@@ -14,7 +14,7 @@ body {
 main {
   padding: 0 7rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   main {
     padding: 0;
   }
@@ -120,7 +120,7 @@ header {
   display: flex;
   gap: 2rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .functioning ol {
     flex-direction: column;
     padding: 0.5rem;
@@ -172,7 +172,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .menus .menus__cards {
     grid-template-columns: 1fr;
   }
@@ -332,7 +332,7 @@ a:hover .fa-solid {
   align-items: stretch;
   gap: 1rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .grid__menus {
     display: flex;
     flex-direction: row;
