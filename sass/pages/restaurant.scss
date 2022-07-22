@@ -8,7 +8,10 @@
     width:100%;
     height:70vh;
     object-fit:cover;
-    object-position:center bottom;
+    object-position:center;
+    @media (max-width: $breakpoint) {
+        height: 30vh;
+    }
 }
 .fa-arrow-left{
     font-size: 2rem;
