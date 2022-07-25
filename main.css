@@ -230,11 +230,13 @@ header {
 .menus .card .fa-solid {
   color: transparent;
 }
-.menus .card :hover .fa-solid {
+.menus .card:hover .fa-solid {
   color: transparent;
   background: linear-gradient(172deg, rgb(255, 121, 218) 7%, rgb(147, 86, 220) 86%);
   background-clip: text;
   -webkit-background-clip: text;
+  animation-name: FadeIn;
+  animation-duration: 1s;
 }
 
 footer {
@@ -269,6 +271,14 @@ footer a {
   }
   100% {
     transform: translatey(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -317,12 +327,15 @@ a:hover .fa-solid {
 }
 .restaurant__main .fa-solid {
   color: transparent;
+  transition: color 2s;
 }
 .restaurant__main:hover .fa-solid {
   color: transparent;
   background: linear-gradient(172deg, rgb(255, 121, 218) 7%, rgb(147, 86, 220) 86%);
   background-clip: text;
   -webkit-background-clip: text;
+  animation-name: FadeIn;
+  animation-duration: 1s;
 }
 
 .page__main {
@@ -500,6 +513,14 @@ section.order button:hover {
   }
   100% {
     transform: translatey(0);
+    opacity: 1;
+  }
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

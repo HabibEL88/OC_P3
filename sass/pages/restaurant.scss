@@ -43,13 +43,16 @@ a:hover .fa-solid{
         top: 1.9rem;
     }
     .fa-solid{
-        color: transparent;      
+        color: transparent;
+        transition: color 2s;
          }
     &:hover .fa-solid{
         color: transparent; 
         @include gradient;
         background-clip: text;
-        -webkit-background-clip:text ;
+        -webkit-background-clip:text;
+        animation-name: FadeIn;
+        animation-duration: 1s;
     }
 
 }
