@@ -327,7 +327,6 @@ a:hover .fa-solid {
 }
 .restaurant__main .fa-solid {
   color: transparent;
-  transition: color 2s;
 }
 .restaurant__main:hover .fa-solid {
   color: transparent;
